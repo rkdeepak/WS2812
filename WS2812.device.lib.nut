@@ -164,6 +164,8 @@ class WS2812 {
                 _bytes_per_pixel = BYTES_PER_PIXEL;
                 _spi.configure(MSB_FIRST | SIMPLEX_TX | NO_SCLK, 7500);
                 break;
+            case 6:
+                // same as 002 config
             case 3:
                 _bytes_per_pixel = IMP3_BYTES_PER_PIXEL;
                 _spi.configure(MSB_FIRST | SIMPLEX_TX | NO_SCLK, 9000);
